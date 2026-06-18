@@ -1,4 +1,21 @@
 
+// 1 - Desconto 
+const valorCompra = 2500;
+
+let desconto = 0;
+
+if (valorCompra >= 1000) {
+    desconto = 0.20;
+} else if (valorCompra >= 500 && valorCompra < 1000) {
+    desconto = 0.10;
+} else {
+    desconto = 0;
+}
+
+const valorFinal = valorCompra - (valorCompra * desconto);
+
+console.log(`Valor final: R$ ${valorFinal}`);
+
 //2 - Sistema de pontos de fidelidade
 
 const categoria = "Ouro";
@@ -22,6 +39,31 @@ switch (categoria)
     console.log('Categoria Inválida');
 
 }
+
+// 3 Frequência de Fibonacci
+let a = 0
+let b = 1
+
+console.log("Os 10 primeiros termos da Sequência de Fibonacci:")
+for (let i = 0; i < 10; i++) {
+
+
+    console.log(a);
+
+    let proximo = a + b;
+    a = b;
+    b = proximo;
+}
+
+//4 - Bateria
+let nivelBateria = 100;
+    while (nivelBateria > 0)
+        {
+    console.log (`Nível de bateria ${nivelBateria}%`)
+nivelBateria -= 10}
+console.log (`Bateria esgotada ${nivelBateria}%!`)
+
+//5
 
 //6 - Aprovação Escolar
 const nota1 = 8;
