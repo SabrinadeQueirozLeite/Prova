@@ -64,6 +64,14 @@ nivelBateria -= 10}
 console.log (`Bateria esgotada ${nivelBateria}%!`)
 
 //5
+function calcularDiasDeVida(idadeEmAnos) {
+    return idadeEmAnos * 365;
+}
+
+let idade = 19;
+let diasVividos = calcularDiasDeVida(idade);
+
+console.log(`Uma pessoa de ${idade} anos viveu aproximadamente ${diasVividos} dias.`);
 
 //6 - Aprovação Escolar
 const nota1 = 8;
